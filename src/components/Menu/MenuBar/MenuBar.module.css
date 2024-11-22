@@ -1,0 +1,61 @@
+/*-----------------------------------*\
+  #menuBAR
+\*-----------------------------------*/
+
+.menubar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 6rem 0;
+  background: var(--sub-color);
+  backdrop-filter: blur(10px);
+
+  box-shadow: var(--shadow-2);
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.menubarList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.menubarItem {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menubarLink {
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+  font-size: calc(var(--fs-1) + (1rem));
+  padding: 0.4rem 0.5rem;
+  transition: color var(--transition-1);
+  cursor: pointer;
+}
+
+/* .menubarItem:hover, .menubarItem:focus{
+    background-color: var(--sub-alt-color);
+  
+  } */
+.menubarLink:hover,
+.menubarLink:focus {
+  color: var(--main-color);
+}
+
+
+.active{
+  color: var(--main-color);
+}

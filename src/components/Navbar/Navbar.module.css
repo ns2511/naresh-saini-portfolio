@@ -1,0 +1,48 @@
+
+
+/*-----------------------------------*\
+  #NAVBAR
+\*-----------------------------------*/
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8rem;
+    height: 3rem;
+    background: var(--sub-color);
+    backdrop-filter: blur(10px);
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--sub-alt-color);
+    border-radius: 0 0 0 12px;
+    box-shadow: var(--shadow-2);
+    z-index: 5;
+  }
+  
+  .navbarList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+    width: 100%;
+    
+  }
+  
+  .navbarLink {
+    color: var(--text-color);
+    font-size: var(--fs-3);
+    padding: 20px 7px;
+    transition: color var(--transition-1);
+  }
+  
+  .navbarLink:hover,
+  .navbarLink:focus { color: var(--main-color); }
+  
+  .navbarLink.active { color: var(--main-color); }
+  

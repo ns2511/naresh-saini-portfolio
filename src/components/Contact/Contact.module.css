@@ -1,0 +1,128 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 100%;
+    gap: 1rem;
+}
+
+.heading{
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.contactInfo{
+    width: 100%;
+    padding: 1rem;
+} 
+.contactForm{
+    padding: 1rem;
+    width: 100%;
+}
+.inputField{
+    border: 1px solid var(--text-color);
+    color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  width: 100%;
+  padding: 13px 20px;
+  margin: 1rem auto;
+  border-radius: 14px;
+  outline: none;
+}
+.inputField::placeholder{
+    font-weight: var(--fw-500);
+    font-size: var(--fs-2);
+}
+
+.inputField:focus{
+    outline-color: var(--main-color);
+}
+
+.form textarea{
+    overflow: hidden;
+    max-width: 100%;
+    min-height: 100px;
+  height: 120px;
+  max-height: 200px;
+  resize: vertical;
+  margin-bottom: 25px;
+}
+
+.form textarea::-webkit-resizer { display: none; }
+.errorMessage{
+    color: var(--colorful-error-color);
+    font-size: var(--fs-8);
+}
+
+.submitBtn{
+    
+    width: 10rem;
+    float: right;
+    background: var(--sub-alt-color);
+    color: var(--sub-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 20px;
+    border-radius: 14px;
+    font-size: var(--fs-6);
+    text-transform: capitalize;
+    box-shadow: var(--shadow-3);
+    z-index: 1;
+    transition: var(--transition-1);
+}
+
+.submitBtn ion-icon { font-size: 16px; }
+
+.submitBtn:hover{
+    background-color: var(--main-color);
+    
+}
+.submitBtn:hover ion-icon, .submitBtn:hover span{
+    color: var(--sub-alt-color);
+    
+}
+
+.submitBtn:disabled:hover{
+    background: var(--sub-color);
+    cursor: not-allowed;
+}
+
+
+@media (min-width:580px) {
+    .personalDetailWrap{
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 1rem;
+        text-align: center;
+        justify-content: center;
+
+    }
+    .personalDetailWrap div{
+        width: 50%;
+        
+    }
+    .personalDetailWrap .inputField{
+        margin: 0px;
+    }
+}
+@media (min-width:768px) {
+    .container{
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+@media (min-width:1080px) {
+    .container{
+       
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 6rem;
+    }
+}

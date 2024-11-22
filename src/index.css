@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Vazirmatn:wght@100..900&display=swap');
+
+
+
+[data-font-size="small"]{
+    /* font-size */
+  --fs-1: 22px;
+  --fs-2: 18px;
+  --fs-3: 15px;
+  --fs-4: 14px;
+  --fs-5: 13px;
+  --fs-6: 12px;
+  --fs-7: 11px;
+  --fs-8: 10px;
+}
+[data-font-size="large"]{
+  /* font-size */
+  --fs-1: 26px;
+  --fs-2: 20px;
+  --fs-3: 19px;
+  --fs-4: 18px;
+  --fs-5: 17px;
+  --fs-6: 16px;
+  --fs-7: 15px;
+  --fs-8: 14px;
+}
+[data-font-width="narrow"]{
+    /* font-weight */
+    --fw-300: 200;
+    --fw-400: 300;
+    --fw-500: 400;
+    --fw-600: 500;
+}
+[data-font-width="wide"]{
+  /* font-weight */
+  --fw-300: 400;
+  --fw-400: 500;
+  --fw-500: 600;
+  --fw-600: 700;
+}
+
+:root {
+
+  /* solid colors  */
+
+  --bg-color: #181818;
+  --main-color: #17b8bd;
+  --caret-color: #17b8bd;
+  --sub-color: #53565a;
+  --sub-alt-color: #121212;
+  --text-color: #bbcdcd;
+  --error-color: #da3333;
+  --error-extra-color: #791717;
+  --colorful-error-color: #da3333;
+  --colorful-error-extra-color: #791717;
+
+  /* fonts  */
+
+  --font-roboto: "Roboto Mono", monospace;
+  --font-vazirmatn: "Vazirmatn", serif;
+
+  --font-dynamic: var(--font-roboto);
+
+ 
+
+
+  /* font-size */
+  --fs-1: 24px;
+  --fs-2: 18px;
+  --fs-3: 17px;
+  --fs-4: 16px;
+  --fs-5: 15px;
+  --fs-6: 14px;
+  --fs-7: 13px;
+  --fs-8: 12px;
+
+  
+    /* font-weight */
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+  
+    /**
+     * shadow
+     */
+    
+    --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+    --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+    --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+    --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+    --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+
+
+
+    /**
+   * transition
+   */
+
+   --transition-1: 0.25s ease;
+   --transition-2: 0.5s ease-in-out;
+
+}
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--main-color);
+  color: var(--text-color);
+  transition: all var(--transition-1);
+  
+  transform:perspective();
+}
+
+/* bootstrap style override  */
+
+dl, ol, ul {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+ol, ul {
+  padding-left: 0 !important;
+}
+
+/* bootstrap styles override ends here  */
+
+a { text-decoration: none; }
+
+li { list-style: none; }
+
+img, ion-icon, a, button, time, span { display: block; }
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  font: inherit;
+}
+
+
+::selection {
+  background: var(--sub-color);
+  color: var(--sub-alt-color);
+}
+
+/* :focus { outline-color: var(--main-color); } */
+
+html { font-family: var(--font-dynamic); }
+
+body { 
+  background: var(--bg-color); 
+  /* color: var(--text-color);
+  background-image: url(./assets/sep12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-position: center; */
+}
+
+
+ion-icon{
+  font-size: var(--fs-1);
+}
+ion-icon:hover{
+  color: var(--main-color);
+}
+ion-icon:hover, button:hover{
+  transform: scale(1.05);
+}
