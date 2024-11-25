@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin-top: 4rem;
     /* justify-content: center; */
     /* align-items: center; */
     width: 100%;
@@ -59,7 +59,7 @@
 
 .submitBtn{
     
-    width: 10rem;
+    width: 12rem;
     float: right;
     background: var(--sub-alt-color);
     color: var(--sub-color);

@@ -1,0 +1,37 @@
+.skillContainer {
+    width: 100%;
+  margin: 5px auto;
+  text-align: center;
+  background: var(--sub-alt-color);
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: var(--shadow-1);
+  }
+  
+  .skillInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  
+  
+  .progressPercent {
+    font-size: 0.9rem;
+    color: var(--main-color);
+  }
+  
+  .progressBar {
+    background-color: var(--sub-color);
+    border-radius: 10px;
+    height: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: var(--main-color);
+    height: 100%;
+    transition: width 0.3s ease;
+  }
+  

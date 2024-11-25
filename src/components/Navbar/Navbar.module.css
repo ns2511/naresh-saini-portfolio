@@ -18,7 +18,7 @@
     border-left: 1px solid;
     border-bottom: 1px solid;
     border-color: var(--sub-alt-color);
-    border-radius: 0 0 0 12px;
+    border-radius: 0 0 0 6px;
     box-shadow: var(--shadow-2);
     z-index: 5;
   }

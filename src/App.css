@@ -1,6 +1,39 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  /* padding: 2rem; */
+  padding: 2rem;
   margin-top: 3rem;
+}
+
+
+
+/* Popup styling */
+.popup {
+  position: fixed;
+  top: 70px; /* Adjust as per Navbar's height */
+  right: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Theme toggle icon styling */
+.theme-toggle-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+.theme-toggle-icon:hover {
+  background-color: #f0f0f0;
 }

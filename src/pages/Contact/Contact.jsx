@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./Contact.module.css";
 import { useForm } from "react-hook-form";
-import Spinner from "../Spinner";
-import { color } from "framer-motion";
-import ConnectStick from "../ConnectStick/ConnectStick";
+import Spinner from "../../components/Spinner";
+import ConnectStick from "../../components/ConnectStick/ConnectStick";
 const Contact = () => {
   const {
     register,
@@ -24,6 +23,7 @@ const Contact = () => {
       
         {/* <div><h1>Contact Me</h1></div> */}
       <div className={styles.container}>
+        
         <div className={styles.contactInfo}>
           <div>
             <h2 className={styles.heading}>Get in Touch</h2>
@@ -34,7 +34,7 @@ const Contact = () => {
               just having a chat. <br />Feel free to fill out the form and email me.
             </p>
           </div>
-         <div style={{float:"left"}}><ConnectStick /></div> 
+         <div style={{float:"left",marginTop:"1rem"}}><ConnectStick /></div> 
         </div>
 
         <div className={styles.contactForm}>

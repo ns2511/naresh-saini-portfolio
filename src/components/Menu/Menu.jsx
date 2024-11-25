@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import MenuBar from "./MenuBar/MenuBar";
 import { useNavigate } from "react-router";
 
-const Menu = ({isMenuOpen,setIsMenuOpen,setIsSettingsOpen}) => {
+const Menu = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigation = useNavigate();
   const toggleMenu = () => {
     const updateMenu = isMenuOpen ? false : true;
     console.log("menu icon clicked");
     isMenuOpen?navigation('/'):"";
-    setIsSettingsOpen(false);
+    
     setIsMenuOpen(updateMenu);
   };
   return (

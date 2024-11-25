@@ -1,0 +1,61 @@
+.terminalContainer {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    background-color: var(--sub-alt-color);
+    color: var(--text-color);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  .terminalHeader {
+    padding: 10px;
+    background-color: var(--sub-color);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+  }
+  .terminalEntry{
+    margin-bottom: 1rem;
+  }
+  
+  .trafficLights {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .trafficLights span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .red {
+    background-color: #ff5f56;
+  }
+  
+  .yellow {
+    background-color: #ffbd2e;
+  }
+  
+  .green {
+    background-color: #27c93f;
+  }
+  
+  .terminalBody {
+    padding: 15px;
+    font-size: var(--fs-2);
+  }
+  
+  .prompt {
+    color: #4caf50;
+  }
+  
+  .command {
+    color: #42a5f5;
+  }
+  
+  .output {
+    color: #b0bec5;
+  }

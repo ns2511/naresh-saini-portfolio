@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "./SettingsItems.module.css";
-import SettingsMenu from "../SettingsMenu/SettingsMenu";
+import styles from "./Theme.module.css";
 
 function Theme() {
   const [currentTheme, setCurrentTheme] = useState(0);
