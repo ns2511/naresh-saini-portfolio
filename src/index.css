@@ -55,6 +55,18 @@
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
+/* bootstrap reset settings  */
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ol, ul {
+  padding-left: 0;
+}
+
+/* bootstrap reset ended here  */
+
+
 
 *,
 *::before,

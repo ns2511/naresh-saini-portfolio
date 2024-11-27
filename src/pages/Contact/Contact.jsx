@@ -3,6 +3,7 @@ import styles from "./Contact.module.css";
 import { useForm } from "react-hook-form";
 import Spinner from "../../components/Spinner";
 import ConnectStick from "../../components/ConnectStick/ConnectStick";
+import emailjs from "emailjs-com";
 const Contact = () => {
   const {
     register,
@@ -14,14 +15,32 @@ const Contact = () => {
   });
 
   async function onSubmit(data) {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
     console.log("submitting the form", data);
+    emailjs.send(
+      "service_gonsvdk",
+      "template_cs3ceof", 
+      data,
+      "GcdZcvWpDQnFvca5U" 
+    ).then(
+      (response) => {
+        console.log("Message Sent Successfully", response.status, response.text);
+        alert("Message Sent Successfully!");
+        document.getElementsByClassName("form").reset();
+      },
+      (error) => {
+        console.error("Message Sending Failed", error);
+        alert("Message Sending Failed!");
+      }
+    );
+    await new Promise((resolve) => setTimeout(resolve, 1000));
   }
+
+ 
+  
 
   return (
     <>
       
-        {/* <div><h1>Contact Me</h1></div> */}
       <div className={styles.container}>
         
         <div className={styles.contactInfo}>

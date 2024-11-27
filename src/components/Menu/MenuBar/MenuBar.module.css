@@ -40,7 +40,7 @@
   display: flex;
   justify-content: center;
   color: var(--text-color);
-  font-size: calc(var(--fs-1) + (1rem));
+  font-size: calc(var(--fs-1) + (0.5rem));
   padding: 0.4rem 0.5rem;
   transition: color var(--transition-1);
   cursor: pointer;
