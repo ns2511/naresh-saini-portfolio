@@ -7,7 +7,7 @@ import AboutMe from './pages/AboutMe/AboutMe';
 import Portfolio from './pages/Portfolio/Portfolio';
 import Contact from './pages/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import Theme from './components/Theme/Theme';
+import NotFound from './components/NotFound';
 
 
 const App = () => (
@@ -18,6 +18,7 @@ const App = () => (
             <Route path="/aboutme" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound/>} />
         </Routes>
         <Footer />
         {/* <Theme/> */}
