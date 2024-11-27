@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./AboutMe.module.css";
 import Skill from "../../components/Skill/Skill";
+import Resume from "../../components/Resume/Resume";
 
 const AboutMe = () => {
   return (
@@ -84,7 +85,7 @@ const AboutMe = () => {
         </div>
       </div>
 
-      <div className={styles.intro}>
+      <div className={styles.codingContainer}>
         <div className={styles.titleWrapper}>
           <div className={styles.iconBox}>
             <ion-icon name="code-slash-outline"></ion-icon>
@@ -108,6 +109,7 @@ const AboutMe = () => {
          
         </div>
       </div>
+      <Resume/>
     </div>
   );
 };

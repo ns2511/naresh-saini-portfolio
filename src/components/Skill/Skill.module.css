@@ -1,11 +1,11 @@
 .skillContainer {
     width: 100%;
-  margin: 5px auto;
+  margin: 12px auto;
   text-align: center;
   background: var(--sub-alt-color);
-  border-radius: 20px;
-  padding: 5px;
-  box-shadow: var(--shadow-1);
+  border-radius: 10px;
+  padding: 6px 12px;
+  box-shadow: var(--shadow-2);
   }
   
   .skillInfo {
@@ -24,7 +24,7 @@
   .progressBar {
     background-color: var(--sub-color);
     border-radius: 10px;
-    height: 6px;
+    height: 8px;
     position: relative;
     overflow: hidden;
   }

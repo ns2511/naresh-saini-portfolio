@@ -8,8 +8,6 @@ const Menu = () => {
   const toggleMenu = () => {
     const updateMenu = isMenuOpen ? false : true;
     console.log("menu icon clicked");
-    isMenuOpen?navigation('/'):"";
-    
     setIsMenuOpen(updateMenu);
   };
   return (

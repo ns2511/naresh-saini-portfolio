@@ -85,6 +85,10 @@
   padding: 10px;
   box-shadow: var(--shadow-1);
   z-index: 1;
+  
+}
+.allSkills li{
+  
 }
 
 .codingProfilesWrap{

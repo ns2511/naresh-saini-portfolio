@@ -1,9 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./Theme.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { hideTheme } from "../../features/themeSlice";
 
 function Theme() {
-  const [currentTheme, setCurrentTheme] = useState(0);
+const isVisible = useSelector((state)=>state.theme.isVisible);
+const dispatch = useDispatch();
 
+const handleHide= ()=>{
+  dispatch(hideTheme());
+}
+
+
+useEffect(() => {
+  if (isVisible) {
+    document.body.addEventListener("click", handleHide);
+  } else {
+    document.getElementsByName('container').removeEventListener("click", handleHide);
+  }
+
+  return () => {
+    document.body.removeEventListener("click", handleHide);
+  };
+}, [isVisible]);
+
+
+
+  const [currentTheme, setCurrentTheme] = useState(0);
+ 
   const themes = [
     {
       name: "draculla",
@@ -72,6 +96,7 @@ function Theme() {
     },
   ];
 
+  
   useEffect(() => {
     const savedTheme = localStorage.getItem("selectedTheme");
     if (savedTheme !== null) {
@@ -128,11 +153,10 @@ function Theme() {
   const handleThemeChange = (index) => {
     setCurrentTheme(index);
   };
-  const resetTheme = () => {
-    setCurrentTheme(0);
-  };
+ 
   return (
-    <div className={styles.selectionContainer}>
+    <div className={styles.container}>
+      <div onClick={e=>e.stopPropagation()} className={styles.box}>
       <div className={styles.wrap}>
       {themes.map((theme, index) => (
         <button
@@ -194,6 +218,7 @@ function Theme() {
           ></div>
         </button>
       ))}
+      </div>
       </div>
     </div>
   );
