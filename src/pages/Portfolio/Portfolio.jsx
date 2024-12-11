@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: "Around The World - News App",
-    url: "#",
+    url: "https://github.com/ns2511/Around-The-World",
     category: "ReactJS",
     imgUrl: newsappImg,
     description: "A news aggregator app that displays category wise news as well as latest headlines.",
