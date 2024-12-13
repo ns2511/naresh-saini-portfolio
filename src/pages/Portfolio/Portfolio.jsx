@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: "Classic Snake Game",
-    url: "#",
+    url: "https://github.com/ns2511/classic_snake_game/",
     category: "Java",
     imgUrl: snakegameImg,
     description: "A recreation of the classic Snake game using Java.",
