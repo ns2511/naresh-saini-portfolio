@@ -10,6 +10,37 @@ const AboutMe = () => {
         <h2 className={styles.articleTitle}>Resume</h2>
       </div>
 
+      {/* Experience  */}
+      <div className={styles.timeline}>
+        <div className={styles.titleWrapper}>
+          <div className={styles.iconBox}>
+            <ion-icon name="bag-handle-outline"></ion-icon>
+          </div>
+
+          <h3>Experience</h3>
+        </div>
+
+        <ol className={styles.timelineList}>
+          <li className={styles.timelineItem}>
+            <h4 className={styles.timelineItemTitle}>
+              Cyntexa labs pvt. ltd. IT Park, Jaipur
+            </h4>
+
+            <span>Associate Software Developer</span>
+            <span >January 2025 – Present</span>
+
+            <p className={styles.timelineText}>
+              Working in the Salesforce cloud ecosystem, I have gained hands-on
+              experience in configuring and managing admin functionalities. I
+              can efficiently handle user management, security settings,
+              automation, and data management within Salesforce. Currently, I’m
+              expanding my expertise to development, focusing on building
+              scalable and efficient cloud-based solutions.
+            </p>
+          </li>
+        </ol>
+      </div>
+      {/* education  */}
       <div className={styles.timeline}>
         <div className={styles.titleWrapper}>
           <div className={styles.iconBox}>
@@ -105,11 +136,9 @@ const AboutMe = () => {
             </span>
           </h3>
         </div>
-        <div className={styles.codingProfilesWrap}>
-         
-        </div>
+        <div className={styles.codingProfilesWrap}></div>
       </div>
-      <Resume/>
+      <Resume />
     </div>
   );
 };

@@ -25,7 +25,7 @@ const Contact = () => {
       (response) => {
         console.log("Message Sent Successfully", response.status, response.text);
         alert("Message Sent Successfully!");
-        document.getElementsByClassName("form").reset();
+        // document.getElementsByClassName("form").reset();
       },
       (error) => {
         console.error("Message Sending Failed", error);
