@@ -40,7 +40,7 @@ const AboutMe = () => {
           </li>
         </ol>
       </div>
-      {/* education  */}
+      {/* education   */}
       <div className={styles.timeline}>
         <div className={styles.titleWrapper}>
           <div className={styles.iconBox}>
