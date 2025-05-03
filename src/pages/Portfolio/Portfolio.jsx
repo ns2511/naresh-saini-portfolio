@@ -4,6 +4,7 @@ import portfolioImg from '../../assets/images/portfolio.png';
 import newsappImg from '../../assets/images/newsapp.png';
 import snakegameImg from '../../assets/images/snakegame.png';
 import hotelfinderImg from '../../assets/images/hotelfinder.png';
+import KbcGame from '../../assets/images/kbc.png';
 
 const projects = [
   {
@@ -33,7 +34,14 @@ const projects = [
     category: "JavaScript",
     imgUrl: hotelfinderImg,
     description: "A Website that fetches Hotels from Booking.com based on City Name, Check IN and Check OUT Date. also user can see hotel on map and add or remove a hotel to favourite List"
-  }
+  },
+  {
+    title: "KBC Game",
+    url: "https://ns2511.github.io/KBC-Game/",
+    category: "JavaScript",
+    imgUrl: KbcGame,
+    description: "A Website that simulates the KBC Game."
+  },
 ];
 
 const Projects = () => {
