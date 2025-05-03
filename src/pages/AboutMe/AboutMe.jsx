@@ -27,15 +27,13 @@ const AboutMe = () => {
             </h4>
 
             <span>Associate Software Developer</span>
-            <span >January 2025 – Present</span>
+            <span>January 2025 – Present</span>
 
             <p className={styles.timelineText}>
-              Working in the Salesforce cloud ecosystem, I have gained hands-on
-              experience in configuring and managing admin functionalities. I
-              can efficiently handle user management, security settings,
-              automation, and data management within Salesforce. Currently, I’m
-              expanding my expertise to development, focusing on building
-              scalable and efficient cloud-based solutions.
+              Working in the Salesforce cloud ecosystem, proficient in Admin,
+              Apex, SOQL, LWC, and API integrations, delivering efficient and
+              scalable Salesforce solutions for business needs in a corporate
+              environment.
             </p>
           </li>
         </ol>
@@ -103,17 +101,35 @@ const AboutMe = () => {
           <h3>Skills</h3>
         </div>
         <div className={styles.allSkills}>
-          <Skill skillName="Java" progress={85} />
-          <Skill skillName="ReactJS" progress={90} />
-          <Skill skillName="DSA" progress={70} />
-          <Skill skillName="DBMS" progress={90} />
-          <Skill skillName="MySQL" progress={90} />
-          <Skill skillName="HTML5" progress={85} />
-          <Skill skillName="CSS3" progress={90} />
-          <Skill skillName="JavaScript" progress={75} />
-          <Skill skillName="MongoDB" progress={80} />
-          <Skill skillName="SpringBoot" progress={60} />
-        </div>
+          
+  {/* Salesforce Skills */}
+  <Skill skillName="Salesforce Admin" progress={95} />
+  <Skill skillName="Apex" progress={95} />
+  <Skill skillName="SOQL" progress={95} />
+  <Skill skillName="LWC (Lightning Web Components)" progress={90} />
+  <Skill skillName="Salesforce Flows" progress={90} />
+  <Skill skillName="API Integration" progress={85} />
+<hr />
+<br />
+  {/* Web & Programming Skills */}
+  <Skill skillName="JavaScript" progress={85} />
+  <Skill skillName="HTML5" progress={85} />
+  <Skill skillName="CSS3" progress={90} />
+  <Skill skillName="Java" progress={90} />
+  <Skill skillName="ReactJS" progress={95} />
+  <hr />
+  <br />
+  {/* CS Fundamentals */}
+  <Skill skillName="DSA (Data Structures & Algorithms)" progress={75} />
+  <Skill skillName="Operating Systems" progress={70} />
+  <Skill skillName="DBMS" progress={85} />
+  <Skill skillName="MySQL" progress={85} />
+<hr />
+<br />
+  {/* Tools */}
+  <Skill skillName="Git & GitHub" progress={80} />
+</div>
+
       </div>
 
       <div className={styles.codingContainer}>
@@ -124,7 +140,7 @@ const AboutMe = () => {
 
           <h3>
             Coding Profiles{" "}
-            <span
+            {/* <span
               style={{
                 fontSize: "var(--fs-8)",
                 color: "var(--sub-color)",
@@ -133,7 +149,7 @@ const AboutMe = () => {
               }}
             >
               (Note:- real-time data through api will be posted in a few days.)
-            </span>
+            </span> */}
           </h3>
         </div>
         <div className={styles.codingProfilesWrap}></div>
