@@ -3,6 +3,7 @@ import styles from "./Portfolio.module.css";
 import portfolioImg from '../../assets/images/portfolio.png';
 import newsappImg from '../../assets/images/newsapp.png';
 import snakegameImg from '../../assets/images/snakegame.png';
+import hotelfinderImg from '../../assets/images/hotelfinder.png';
 
 const projects = [
   {
@@ -26,6 +27,13 @@ const projects = [
     imgUrl: snakegameImg,
     description: "A recreation of the classic Snake game using Java.",
   },
+  {
+    title: "Hotel Finder",
+    url: "https://ns2511.github.io/Hotel-Finder/",
+    category: "JavaScript",
+    imgUrl: hotelfinderImg,
+    description: "A Website that fetches Hotels from Booking.com based on City Name, Check IN and Check OUT Date. also user can see hotel on map and add or remove a hotel to favourite List"
+  }
 ];
 
 const Projects = () => {
