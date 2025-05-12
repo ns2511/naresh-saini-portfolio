@@ -42,14 +42,7 @@ const projects = [
     imgUrl: KbcGame,
     description: "A Website that simulates the KBC Game."
   },
-  {
-    title: "KBC Game",
-    url: "https://ns2511.github.io/KBC-Game/",
-    category: "JavaScript",
-    imgUrl: KbcGame,
-    description: "A Website that simulates the KBC Game."
-  },
-
+  
 ];
 
 const Projects = () => {
